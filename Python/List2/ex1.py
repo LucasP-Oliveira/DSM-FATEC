@@ -1,0 +1,1 @@
+nome = input("Lucas Pereira de Oliveira")

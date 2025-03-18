@@ -1,0 +1,149 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: darkseagreen;
+    font-family: Arial, sans-serif;
+}
+
+#container{
+    width: 80%;
+    margin: 50px;
+}
+
+header{
+    width: 98%;
+    top: 500px;
+    padding-left: 1%;
+    padding-right: 1%;
+    float: left;
+}
+
+header{
+    height: 200px;
+    background-color: chartreuse;
+}
+
+
+main {
+    margin-top: 1%;
+    background-color: chocolate;
+    width: 92%;
+    padding-left: 4%;
+    padding-right: 4%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    text-align: justify;
+}
+
+main p, main h3 {
+    text-indent: 2%;
+}
+
+main h3{
+    color: red;
+    text-transform: uppercase;
+    margin-bottom: 2%;
+}
+nav.topo {
+    width: 100%;
+    margin-bottom: 1%;
+}
+
+/* nav topo inicio */
+nav.topo ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    overflow: hidden;
+    background-color: gray;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    left: 0;
+}
+
+nav.topo li {
+    display: inline-block;
+}
+
+nav.topo li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 10px 20px;
+    text-decoration: none;
+}
+
+nav.topo li a:hover {
+    background-color: darkgray;
+}
+
+nav.topo .active {
+    background-color: steelblue;
+}
+
+/* nav topo fim  */
+
+nav.lateral {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    width: 29%;
+    height: 200px;
+    background-color: #f1f1f1;
+}
+
+/* nav vertical inicio */
+nav.lateral ul {
+    list-style-type: none;
+    margin-top: 50px;
+    margin: 5px;
+    padding: 0;
+    top: 200px;
+    position: fixed;
+    left: 0;
+    height: 50%;
+    width: 10%;
+}
+
+nav.lateral li {
+    border: 1px solid dimgray;
+    margin-bottom: 8px;
+}
+
+nav.lateral li a {
+    display: block;
+    color: black;
+    padding: 8px 16px;
+    text-decoration: none;
+    background-color: gray;
+    
+
+}
+
+nav.lateral li a:hover {
+    background-color: gray;
+    color: #f1f1f1;
+    text-indent: 10px;
+}
+
+nav.lateral .active {
+    background-color: steelblue;
+    color: white;
+
+}
+/* nav vertical fim */
+
+footer{
+    margin-top: 1%;
+    background-color: blueviolet;
+    width: 100%;
+    height: 400px;
+}
+
+.logo{
+    width: 150px;
+
+}

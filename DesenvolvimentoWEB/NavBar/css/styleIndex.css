@@ -26,9 +26,9 @@ header {
 main {
     margin-top: 1%;
     background-color: chocolate;
-    width: 92%;
-    padding-left: 4%;
-    padding-right: 4%;
+    width: 100%;
+    padding-left: 1%;
+    padding-right: 1%;
     padding-top: 2%;
     padding-bottom: 2%;
     text-align: justify;
@@ -86,7 +86,7 @@ nav.lateral {
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     width: 10%;
     height: 100%;
-    background-color: tranparent;
+    background-color: gray;
     position: fixed;
     top: 200px;
     left: 0;
@@ -94,15 +94,11 @@ nav.lateral {
     box-sizing: border-box;
 }
 
+/* nav vertical inicio */
 nav.lateral ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-}
-
-nav.lateral li {
-    border: 1px solid dimgray;
-    margin-bottom: 8px;
 }
 
 nav.lateral li a {
@@ -110,19 +106,21 @@ nav.lateral li a {
     color: black;
     padding: 8px 16px;
     text-decoration: none;
-    background-color: gray;
+
 }
 
+/* ao passar o mouse sobre */
 nav.lateral li a:hover {
     background-color: gray;
-    color: #f1f1f1;
-    text-indent: 10px;
+    color: white;
 }
 
 nav.lateral .active {
-    background-color: steelblue;
+    background-color: SteelBlue;
     color: white;
 }
+
+/* nav vertical fim */
 
 footer {
     margin-top: 1%;

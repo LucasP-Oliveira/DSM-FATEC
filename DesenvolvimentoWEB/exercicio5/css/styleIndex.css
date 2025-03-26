@@ -1,14 +1,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Anton&family=Big+Shoulders+Inline:opsz,wght@10..72,100..900&family=Boldonse&display=swap');
 
-@font-face {
-    font-family: "Revamped";
-    src: url('../fontes/Revamped.otf');
-}
-@font-face {
-    font-family: "gunplay";
-    src: url('../fontes/gunplay\ rg.otf');
-}
+
 
 @font-face {
     font-family: "Capture";
@@ -20,6 +13,11 @@
     src: url('../fontes/Type\ Icons.ttf');
 }
 
+@font-face {
+    font-family: "James";
+    src: url('../fontes/James\ School.otf');
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -27,7 +25,7 @@
 
 body {
     background-image: url('../imagem/2901625-fundo-de-textura-amassada-de-papel-branco-gratis-foto.jpg ');
-    font-family: "Big Shoulders Inline";
+    font-family: "Icons";
 }
 
 #container {
@@ -66,11 +64,17 @@ main p, main h3, main h1 {
 
 main p {
     margin: 1%;
+    font-family: "Anton";
 }
 
 main p2 {
     color: rgb(100, 100, 100);
     text-align: center;
+    font-family: "Big Shoulders Inline";
+}
+
+main h1 {
+    font-family: "Big Shoulders Inline";
 }
 
 main h3 {
@@ -78,6 +82,7 @@ main h3 {
     text-transform: uppercase;
     margin-bottom: 2%;
     margin-top: 2%;
+    font-family: "James";
 }
 
 nav.topo {
@@ -120,7 +125,7 @@ background-color: black;
 }
 
 nav.lateral {
-    font-family: "Big Shoulders Inline";
+    font-family: "James";
     width: 10%;
     height: 100%;
     background-color:rgb(237, 245, 0);

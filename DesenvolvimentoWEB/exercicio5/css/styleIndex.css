@@ -122,8 +122,8 @@ nav.topo li a:hover {
 }
 
 nav.topo .active {
-background-color: black;
-    color: rgb(237, 245, 0);;
+    background-color:black;
+    color: rgb(237, 245, 0);
 }
 
 nav.lateral {
@@ -281,17 +281,35 @@ table.tabela {
 
 table.tabela th,
 table.tabela td {
-    border: 1px solid yellow;
+    border: 2px solid yellow;
     padding: 2%;
 }
 
 table.tabela tr:nth-child(even) {
-    background-color: rgba(237, 245, 0, 0.8);
+    background-color: rgba(153, 158, 23, 0.3);
+    color:rgb(194, 243, 61)
 }
 
+
+table.tabela tr {
+    background-color: black;
+    color: rgb(194, 243, 61);
+}
+
+
 table.tabela th {
-    background-color: rgb(75, 71, 71);
+    background-color:rgb(172, 190, 2);
     color: black;
     text-align: center;
     font-family:'Courier New', Courier, monospace;
 }
+
+table.tabela tr:hover{
+    background-color:rgb(255, 251, 250);
+    color: black;
+}
+
+/* table.tabela tr:nth-child(even):hover {
+    background-color: black
+    color: black;
+} */

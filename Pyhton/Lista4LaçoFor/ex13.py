@@ -10,7 +10,7 @@ for i in range(1, num):
 
     else:
         print(f"{i} é impar")
-        somaimpar =+ i
+        somaimpar += i
 
 print(f"A soma dos numeros pares é: {somapar}")
 print(f"A soma dos numeros impares é: {somaimpar}")

@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>TechSolutions - Cálculo de Salário</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="shortcut icon" href="../img/chapeu-de-graduacao.png" type="image/png">
+        <link href="../css/estilo.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: var(--primary-color);">
+            <div class="container">
+                <a class="navbar-brand" href="index.html">
+                    <i class="bi bi-code-square"></i> TechSolutions
+                </a>
+                <button
+                    class="navbar-toggler"
+                    type="button"
+                    data-toggle="collapse"
+                    data-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Alterna navegação"
+                >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html" title="Página inicial">
+                                <i class="bi bi-house"></i>
+                                Home
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="calculos.html" title="Cálculos com JQuery">
+                                <i class="bi bi-calculator"></i>
+                                Calculos
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="cep.html" title="Consulta de CEP">
+                                <i class="bi bi-geo-alt"></i>
+                                CEP
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link" href="salario.html" title="Cálculo de Salário">
+                                <i class="bi bi-cash-coin"></i>
+                                Salário
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="api.html" title="Integração com API">
+                                <i class="bi bi-cloud-download"></i>
+                                API
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        
+        <!--AQUI COMEÇA O CONTEÚDO-->
+        <div class="container mt-5">
+            <div class="row mb-3 justify-content-md-center">
+                <!--FORM COM INPUTS PARA CÁLCULO DE SALÁRIO-->
+                <div class="col-md-6 col-sm-12 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="section-heading">Cálculo de Salário</h3>
+                            <div class="form-group">
+                                <label for="txtNome">Nome</label>
+                                <input
+                                    type="text"
+                                    class="form-control"
+                                    id="txtNome"
+                                    name="txtNome"
+                                    placeholder="Digite o nome do funcionário"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="txtIdade">Idade</label>
+                                <input
+                                    type="number"
+                                    class="form-control"
+                                    id="txtIdade"
+                                    name="txtIdade"
+                                    placeholder="Digite a idade"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="txtSalarioBruto">Salário Bruto</label>
+                                <input
+                                    type="number"
+                                    step="0.5"
+                                    class="form-control"
+                                    id="txtSalarioBruto"
+                                    name="txtSalarioBruto"
+                                    placeholder="Digite o salário bruto"
+                                    required
+                                >
+                            </div>
+                            <div class="form-group">
+                                <label for="selDependentes">Número de Dependentes</label>
+                                <select class="form-control" id="selDependentes" name="selDependentes" required>
+                                    <option value="0">0</option>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                    <option value="4">4</option>
+                                    <option value="5">5</option>
+                                </select>
+                            </div>
+                            <button id="calcularSalario" class="btn btn-primary">Calcular Salário</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <section id="footer">
+            <div class="container">
+                <div class="row text-center text-xs-center text-sm-left text-md-left">
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Links Rápidos</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li>
+                                <a href="index.html">
+                                    <i class="bi bi-chevron-right"></i>
+                                    Home
+                                </a>
+                            </li>
+                            <li>
+                                <a href="calculos.html">
+                                    <i class="bi bi-chevron-right"></i>
+                                    Cálculos
+                                </a>
+                            </li>
+                            <li>
+                                <a href="cep.html">
+                                    <i class="bi bi-chevron-right"></i>
+                                    CEP
+                                </a>
+                            </li>
+                            <li>
+                                <a href="salario.html">
+                                    <i class="bi bi-chevron-right"></i>
+                                    Salário
+                                </a>
+                            </li>
+                            <li>
+                                <a href="api.html">
+                                    <i class="bi bi-chevron-right"></i>
+                                    API
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Recursos</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-chevron-right"></i>
+                                    Documentação
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-chevron-right"></i>
+                                    Tutoriais
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-chevron-right"></i>
+                                    FAQ
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-chevron-right"></i>
+                                    Suporte
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#">
+                                    <i class="bi bi-chevron-right"></i>
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-xs-12 col-sm-4 col-md-4">
+                        <h5>Contato</h5>
+                        <ul class="list-unstyled quick-links">
+                            <li>
+                                <i class="bi bi-geo-alt"></i> Av. Exemplo, 1000 - Centro
+                            </li>
+                            <li>
+                                <i class="bi bi-envelope"></i> contato@techsolutions.com
+                            </li>
+                            <li>
+                                <i class="bi bi-telephone"></i> (11) 1234-5678
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 mt-2 mt-sm-5">
+                        <ul class="list-unstyled list-inline social text-center">
+                            <li class="list-inline-item">
+                                <a href="#" title="Facebook">
+                                    <i class="bi bi-facebook"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" title="Twitter">
+                                    <i class="bi bi-twitter"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" title="Instagram">
+                                    <i class="bi bi-instagram"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" title="LinkedIn">
+                                    <i class="bi bi-linkedin"></i>
+                                </a>
+                            </li>
+                            <li class="list-inline-item">
+                                <a href="#" title="Contato">
+                                    <i class="bi bi-envelope"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
+                        <p>
+                            TechSolutions © 2025. Todos os direitos reservados.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ./Footer -->
+        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+        <script src="../js/salario.js"></script>
+    </body>
+</html>

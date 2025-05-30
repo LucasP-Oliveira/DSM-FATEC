@@ -1,0 +1,290 @@
+/* Definição da nova paleta de cores */
+:root {
+  --primary-color: #2c3e50;    /* Azul escuro */
+  --secondary-color: #27ae60;  /* Verde esmeralda */
+  --accent-color: #e74c3c;     /* Vermelho coral */
+  --light-color: #ecf0f1;      /* Cinza claro */
+  --dark-color: #34495e;       /* Azul escuro mais profundo */
+  --text-color: #2c3e50;       /* Cor principal para textos */
+  --text-light: #ecf0f1;       /* Cor para textos em fundos escuros */
+  --link-color: #3498db;       /* Azul para links */
+  --link-hover: #2980b9;       /* Azul mais escuro para hover em links */
+  --success-color: #2ecc71;    /* Verde para mensagens de sucesso */
+  --warning-color: #f39c12;    /* Laranja para avisos */
+  --danger-color: #e74c3c;     /* Vermelho para erros/perigo */
+}
+
+/* Footer */
+@import url('https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css');
+section {
+    padding: 60px 0;
+}
+
+section .section-title {
+    text-align: center;
+    color: var(--secondary-color);
+    margin-bottom: 50px;
+    text-transform: uppercase;
+}
+
+#footer {
+    background: var(--primary-color) !important;
+}
+
+#footer h5 {
+    padding-left: 10px;
+    border-left: 3px solid var(--secondary-color);
+    padding-bottom: 6px;
+    margin-bottom: 20px;
+    color: var(--text-light);
+}
+
+#footer a {
+    color: var(--text-light);
+    text-decoration: none !important;
+    background-color: transparent;
+    -webkit-text-decoration-skip: objects;
+}
+
+#footer ul.social li {
+    padding: 3px 0;
+}
+
+#footer ul.social li a i {
+    margin-right: 5px;
+    font-size: 25px;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.social li:hover a i {
+    font-size: 30px;
+    margin-top: -10px;
+    color: var(--secondary-color);
+}
+
+#footer ul.social li a,
+#footer ul.quick-links li a {
+    color: var(--text-light);
+}
+
+#footer ul.social li a:hover {
+    color: var(--secondary-color);
+}
+
+#footer ul.quick-links li {
+    padding: 3px 0;
+    -webkit-transition: .5s all ease;
+    -moz-transition: .5s all ease;
+    transition: .5s all ease;
+}
+
+#footer ul.quick-links li:hover {
+    padding: 3px 0;
+    margin-left: 5px;
+    font-weight: 700;
+}
+
+#footer ul.quick-links li a i {
+    margin-right: 5px;
+}
+
+#footer ul.quick-links li:hover a i {
+    font-weight: 700;
+    color: var(--secondary-color);
+}
+
+/* Estilos personalizados para cards */
+.card {
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card-title {
+    color: var(--primary-color);
+    font-weight: 600;
+}
+
+.card-subtitle {
+    color: var(--secondary-color);
+}
+
+.card-link {
+    color: var(--link-color);
+}
+
+.card-link:hover {
+    color: var(--link-hover);
+    text-decoration: none;
+}
+
+/* Estilos para navbar */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand {
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.nav-link {
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Estilos para botões */
+.btn-primary {
+    background-color: var(--primary-color);
+    border-color: var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--dark-color);
+    border-color: var(--dark-color);
+}
+
+.btn-success {
+    background-color: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.btn-success:hover {
+    background-color: #219653;
+    border-color: #219653;
+}
+
+.btn-danger {
+    background-color: var(--accent-color);
+    border-color: var(--accent-color);
+}
+
+.btn-danger:hover {
+    background-color: #c0392b;
+    border-color: #c0392b;
+}
+
+/* Estilos para formulários */
+.form-control:focus {
+    border-color: var(--secondary-color);
+    box-shadow: 0 0 0 0.2rem rgba(39, 174, 96, 0.25);
+}
+
+/* Estilos para breadcrumb */
+.breadcrumb {
+    background-color: var(--light-color);
+    border-radius: 8px;
+}
+
+.breadcrumb-item a {
+    color: var(--link-color);
+}
+
+.breadcrumb-item a:hover {
+    color: var(--link-hover);
+    text-decoration: none;
+}
+
+/* Estilos para alertas */
+.alert-primary {
+    background-color: rgba(44, 62, 80, 0.1);
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+
+.alert-success {
+    background-color: rgba(39, 174, 96, 0.1);
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+
+.alert-danger {
+    background-color: rgba(231, 76, 60, 0.1);
+    border-color: var(--accent-color);
+    color: var(--accent-color);
+}
+
+/* Estilos responsivos */
+@media (max-width: 767px) {
+    #footer h5 {
+        padding-left: 0;
+        border-left: transparent;
+        padding-bottom: 0px;
+        margin-bottom: 10px;
+    }
+    
+    .card {
+        margin-bottom: 20px;
+    }
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 0.5s ease-in;
+}
+
+/* Hero section para a página inicial */
+.hero-section {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--dark-color) 100%);
+    color: var(--text-light);
+    padding: 80px 0;
+    margin-bottom: 30px;
+    border-radius: 0 0 10px 10px;
+}
+
+.hero-section h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    opacity: 0.9;
+}
+
+.feature-icon {
+    font-size: 2.5rem;
+    color: var(--secondary-color);
+    margin-bottom: 15px;
+}
+
+.section-heading {
+    position: relative;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+    color: var(--primary-color);
+}
+
+.section-heading:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 60px;
+    height: 3px;
+    background-color: var(--secondary-color);
+}
+
+.section-heading.text-center:after {
+    left: 50%;
+    transform: translateX(-50%);
+}
